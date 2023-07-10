@@ -48,7 +48,6 @@ public class Ex02_Login extends HttpServlet {
 		html += "</body>"
 				+ "</html>";
 		out.print(html);
-		
 	}
 
 }
