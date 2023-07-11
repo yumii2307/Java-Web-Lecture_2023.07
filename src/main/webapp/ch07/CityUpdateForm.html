@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>City Update</title>
+	<style>
+		td { text-align: center; padding: 10px; }
+	</style>
+</head>
+<body style="margin: 40px">
+	<h1>도시 수정</h1>
+	<hr>
+	<form action="/jw/ch07/city/update" method="post">
+		<input type="hidden" name="id" value="vv">
+		<table>
+			<tr>
+				<td>Name</td><td><input type="text" name="name" value="vv"></td>
+			</tr>
+			<tr>
+				<td>CountryCode</td><td><input type="text" name="countryCode" value="vv"></td>
+			</tr>
+			<tr>
+				<td>District</td><td><input type="text" name="district" value="vv"></td>
+			</tr>
+			<tr>
+				<td>Population</td><td><input type="text" name="population" value="vv"></td>
+			</tr>
+			<tr><td colspan="2"><input type="submit" value="수정"></td></tr>
+		</table>
+	</form>
+</body>
+</html>
