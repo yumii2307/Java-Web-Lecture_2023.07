@@ -28,7 +28,7 @@ public class UserDao {
 	
 	public User getUser(String uid) {
 		Connection conn = getConnection();
-		String sql = "select * from users where uid=?";
+		String sql = "select * from users where uid=? and isDeleted=0";
 		User user = null;
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
