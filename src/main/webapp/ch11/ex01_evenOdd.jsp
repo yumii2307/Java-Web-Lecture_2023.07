@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<title>홀수 짝수</title>
 </head>
-<body>
+<body style="margin: 40px">
 	<h1>홀수 짝수</h1>
 	<hr>
 	<h3>난수를 통해서 얻은 숫자: <%= num %></h3>
