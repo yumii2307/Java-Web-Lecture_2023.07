@@ -10,7 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 
-@WebFilter("/ch11/*")
+@WebFilter("/ch10/*")
 public class EncodingFilter extends HttpFilter implements Filter {
 
     public EncodingFilter() {
