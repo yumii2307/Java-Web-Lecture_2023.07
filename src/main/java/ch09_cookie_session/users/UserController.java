@@ -1,7 +1,6 @@
 package ch09_cookie_session.users;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -14,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import org.mindrot.jbcrypt.BCrypt;
 
+// @WebServlet("/ch09/users/*") 로 사용할 수도 있음
 @WebServlet({ "/ch09/users/register", "/ch09/users/list", "/ch09/users/update", 
 				"/ch09/users/delete", "/ch09/users/login", "/ch09/users/logout" })
 public class UserController extends HttpServlet {
@@ -26,7 +26,6 @@ public class UserController extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		response.setContentType("text/html; charset=utf-8");
-		PrintWriter out = response.getWriter();
 		String uid = null, pwd = null, pwd2 = null, uname = null, email = null;
 		RequestDispatcher rd = null;
 		User user = null;
